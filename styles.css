@@ -1,0 +1,32 @@
+body {
+  background-color: #4b5463;
+}
+
+.card {    
+  background: #000000d0;
+  color: white;   
+  max-width: 400px;
+  padding: 2em;
+  margin: 2em auto;
+  border-radius: 35px;   
+  
+}
+
+input { 
+  border-radius: 10px;
+  max-width: 100%;
+}  
+
+button {
+  border-radius: 10px;
+  cursor: pointer;   
+}
+
+.current-location {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+
