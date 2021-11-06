@@ -3,6 +3,7 @@ const searchForm = document.querySelector(".js-search-form");
 const input = document.querySelector("input");
 const temperatureElement = document.querySelector(".js-temperature div");
 const descriptionElement = document.querySelector(".js-description div");
+const currentWeatherIcon = document.querySelector(".js-current-weather-icon");
 const weather = {};
 const key = "8665a3223e46a3443c86e88384992503";
 let city;
@@ -15,7 +16,7 @@ weather.temperature = {
 searchForm.addEventListener("submit", function (event) {
   event.preventDefault();
   city = input.value;
-  console.log(city);
+  // console.log(city);
   getSearchWeather(city);
 });
 
@@ -31,6 +32,8 @@ function getSearchWeather(city) {
       weather.description = data.weather[0].description;
       weather.city = data.name;
       weather.country = data.sys.country;
+      weather.iconId = data.weather[0].icon;
+      console.log(weather.iconId);
     })
     .then(function () {
       displayWeather();
@@ -41,4 +44,5 @@ function displayWeather() {
   temperatureElement.innerHTML = `${weather.temperature.value} <span>℉<span>`;
   currentLocationElement.innerHTML = `${weather.city}, ${weather.country}`;
   descriptionElement.innerHTML = `${weather.description}`;
+  currentWeatherIcon.innerHTML = `<img src="https://openweathermap.org/img/w/${weather.iconId}.png" alt="Weather Icon" />`
 }
