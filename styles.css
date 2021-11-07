@@ -8,8 +8,7 @@ body {
   max-width: 400px;
   padding: 2em;
   margin: 2em auto;
-  border-radius: 35px;   
-  
+  border-radius: 35px;  
 }
 
 input { 
@@ -27,6 +26,10 @@ button {
   align-items: flex-end;
 }
 
-
+.notification {
+  background-color: red;
+  color: black;
+  border-radius: 10px;  
+}
 
 
