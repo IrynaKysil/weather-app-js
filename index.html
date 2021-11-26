@@ -12,33 +12,44 @@
     <script defer src="index.js"></script>
     <title>Weather App</title>
   </head>
+
   <body>
+    <!-- Card -->
     <div class="card">
-      <h2>Weather Forecast</h2>       
-    <div class="current-location js-current-location">
-      <div></div>            
-    </div>
-    <br>   
-    <div class="notification js-notification">
-      <div></div>
-    </div>
-    <br>    
+      <h2>Weather Forecast</h2>
+      <div class="current-location js-current-location">
+        <div></div>
+      </div>
+      <br />
+      <div class="notification js-notification">
+        <div></div>
+      </div>
+      <br />
       <form class="search-form js-search-form" action="">
         <input type="text" placeholder="City Name" value="" />
         <button type="submit">
           <i class="fas fa-search"></i>
         </button>
       </form>
-      <br>
+      <br />
       <div class="temperature js-temperature">
         <div></div>
       </div>
-      <br>
+      <br />
       <div class="description js-description">
         <div></div>
       </div>
       <div class="js-current-weather-icon"></div>
     </div>
-  </div>     
+    <!-- Footer -->
+    <div class="footer">
+      <div>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Iryna Kysil
+      </div>
+    </div>
   </body>
 </html>

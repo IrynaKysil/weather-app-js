@@ -87,5 +87,5 @@ function displayWeather() {
   temperatureElement.innerHTML = `${weather.temperature.value} <span>℉<span>`;
   currentLocationElement.innerHTML = `${weather.city}, ${weather.country}`;
   descriptionElement.innerHTML = `${weather.description}`;
-  currentWeatherIcon.innerHTML = `<img src="https://openweathermap.org/img/w/${weather.iconId}.png" alt="Weather Icon" />`;
+  currentWeatherIcon.innerHTML = `<img src="https://openweathermap.org/img/w/${weather.iconId}.png" alt="Weather Icon" />`; 
 }
